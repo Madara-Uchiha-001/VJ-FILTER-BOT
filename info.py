@@ -71,7 +71,7 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "True") # Necessary If cl
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'ikigai_movies') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ikigai_movies_chat)
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ikigai_movies_chat')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ikigai_bots')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/faparenatutor')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ikigai_chats') # Support Chat Link Without https:// or @
@@ -103,11 +103,11 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/faparenatutor)
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/faparenatutor')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com)
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'f786e7834aa4f9f6d656dfc81c88389bb6a8263f')
 
 # Others
