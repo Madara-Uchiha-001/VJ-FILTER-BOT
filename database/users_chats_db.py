@@ -250,6 +250,23 @@ class Database:
             else:
                 await self.users.update_one({"id": user_id}, {"$set": {"expiry_time": None}})
         return False
+
+    async def set_verify_expiry(self, user_id):
+    expiry = datetime.datetime.now() + datetime.timedelta(hours=24)
+    await self.col.update_one(
+        {'id': int(user_id)},
+        {'$set': {'verify_expiry': expiry}},
+        upsert=True
+    )
+
+async def check_verify_expiry(self, user_id):
+    user = await self.col.find_one({'id': int(user_id)})
+    if not user:
+        return False
+    expiry = user.get('verify_expiry')
+    if not expiry:
+        return False
+    return datetime.datetime.now() < expiry
     
     async def check_remaining_uasge(self, userid):
         user_id = userid
