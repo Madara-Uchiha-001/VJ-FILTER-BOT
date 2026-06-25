@@ -115,7 +115,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 VERIFY = bool(environ.get('VERIFY', True))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'shortxlinks.com')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '1ab8f9226671c3ea4da75be8c6f6ac012e0a9a09')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/KdramaTalkies')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
